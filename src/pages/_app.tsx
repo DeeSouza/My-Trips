@@ -18,6 +18,12 @@ function App({ Component, pageProps }: AppProps) {
 				/>
 				<meta name="theme-color" content="#06092B" />
 				<link rel="manifest" href="/manifest.json" />
+				<link
+					rel="stylesheet"
+					href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+					integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+					crossOrigin=""
+				/>
 			</Head>
 
 			<GlobalStyles />
