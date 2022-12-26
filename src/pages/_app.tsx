@@ -7,10 +7,10 @@ function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<title>My Travels</title>
+				<title>My Trips</title>
 				<meta
 					name="description"
-					content="Minhas viagens pelo Brasil e pelo mundo"
+					content="Minhas viagens pelo Brasil e pelo Mundo!"
 				/>
 				<meta
 					name="viewport"
