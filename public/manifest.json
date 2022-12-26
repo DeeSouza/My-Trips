@@ -1,0 +1,10 @@
+{
+	"name": "MyTrips",
+	"short_name": "React Avançado",
+	"icons": [],
+	"background_color": "#06092B",
+	"description": "Minhas viagens pelo Brasil e pelo Mundo!",
+	"display": "fullscreen",
+	"start_url": "/",
+	"theme_color": "#06092B"
+}

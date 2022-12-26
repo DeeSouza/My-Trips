@@ -16,6 +16,8 @@ function App({ Component, pageProps }: AppProps) {
 					name="viewport"
 					content="width=device-width, initial-scale=1"
 				/>
+				<meta name="theme-color" content="#06092B" />
+				<link rel="manifest" href="/manifest.json" />
 			</Head>
 
 			<GlobalStyles />
