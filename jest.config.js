@@ -4,5 +4,8 @@ module.exports = {
 	collectCoverage: true,
 	collectCoverageFrom: ['src/**/*.ts(x)'],
 	setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
-	modulePaths: ['<rootDir>/src/']
+	modulePaths: ['<rootDir>/src/'],
+	transformIgnorePatterns: [
+		'/node_modules/(?!(react-leaflet/lib|@react-leaflet/core/lib)/)'
+	]
 }

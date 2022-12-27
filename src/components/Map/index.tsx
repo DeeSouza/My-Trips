@@ -1,6 +1,6 @@
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
-interface Place {
+type Place = {
 	id: string
 	name: string
 	slug: string
@@ -10,7 +10,7 @@ interface Place {
 	}
 }
 
-interface MapProps {
+type MapProps = {
 	places?: Place[]
 }
 
