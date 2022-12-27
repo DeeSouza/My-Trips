@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 
 type Place = {
@@ -14,28 +15,37 @@ export type MapProps = {
 	places?: Place[]
 }
 
-const Map = ({ places }: MapProps) => (
-	<MapContainer
-		style={{
-			height: '100%',
-			width: '100%'
-		}}
-		center={[0, 0]}
-		zoom={3}
-	>
-		<TileLayer
-			attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-			url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-		/>
+const Map = ({ places }: MapProps) => {
+	const router = useRouter()
 
-		{places?.map(({ id, name, slug, location: { latitude, longitude } }) => (
-			<Marker
-				key={`place-${id}`}
-				position={[latitude, longitude]}
-				title={name}
+	return (
+		<MapContainer
+			style={{
+				height: '100%',
+				width: '100%'
+			}}
+			center={[0, 0]}
+			zoom={3}
+		>
+			<TileLayer
+				attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+				url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 			/>
-		))}
-	</MapContainer>
-)
+
+			{places?.map(
+				({ id, name, slug, location: { latitude, longitude } }) => (
+					<Marker
+						key={`place-${id}`}
+						position={[latitude, longitude]}
+						title={name}
+						eventHandlers={{
+							click: () => router.push(`/places/${slug}`)
+						}}
+					/>
+				)
+			)}
+		</MapContainer>
+	)
+}
 
 export default Map
