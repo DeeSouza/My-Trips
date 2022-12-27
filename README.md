@@ -100,7 +100,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 Diego Souza - [@deesouza](https://linkedin.com.br/in/deesouza) - dee-souza@hotmail.com
 
-Project Link: [https://github.com/deesouza/my-trips](https://github.com/deesouza/my-trips)
+Project Link: [my-trips-deesouza.vercel.app](my-trips-deesouza.vercel.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

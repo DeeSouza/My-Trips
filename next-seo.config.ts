@@ -2,10 +2,10 @@ const seoConfig = {
 	openGraph: {
 		type: 'website',
 		locale: 'en_IE',
-		url: 'https://www.url.ie/',
+		url: 'https://my-trips-deesouza.vercel.app',
 		siteName: 'My Trips'
 	},
-	twitter: {
+	linkedin: {
 		handle: '@deesouza',
 		site: '@deesouza',
 		cardType: 'summary_large_image'

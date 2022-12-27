@@ -13,7 +13,7 @@ export default function HomeTemplate({ places }: MapProps) {
 			<NextSeo
 				title="My Trips"
 				description="Minhas viagens pelo Brasil e pelo Mundo!"
-				canonical=""
+				canonical="https://my-trips-deesouza.vercel.app"
 				openGraph={{
 					url: '',
 					title: 'My Trips',
