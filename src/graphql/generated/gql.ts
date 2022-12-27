@@ -15,6 +15,7 @@ import { TypedDocumentNode as DocumentNode } from '@graphql-typed-document-node/
 const documents = {
     "\n\tquery getPages($first: Int) {\n\t\tpages(first: $first) {\n\t\t\tid\n\t\t\theading\n\t\t\tslug\n\t\t\tbody {\n\t\t\t\thtml\n\t\t\t}\n\t\t}\n\t}\n": types.GetPagesDocument,
     "\n\tquery getPageBySlug($slug: String!) {\n\t\tpage(where: { slug: $slug }) {\n\t\t\tid\n\t\t\tslug\n\t\t\theading\n\t\t\tbody {\n\t\t\t\thtml\n\t\t\t}\n\t\t}\n\t}\n": types.GetPageBySlugDocument,
+    "\n\tquery getPlaces {\n\t\tplaces {\n\t\t\tid\n\t\t\tslug\n\t\t\tname\n\t\t\tlocation {\n\t\t\t\tlatitude\n\t\t\t\tlongitude\n\t\t\t}\n\t\t\tdescription {\n\t\t\t\thtml\n\t\t\t}\n\t\t\tgallery {\n\t\t\t\turl\n\t\t\t\theight\n\t\t\t\twidth\n\t\t\t}\n\t\t}\n\t}\n": types.GetPlacesDocument,
 };
 
 /**
@@ -25,6 +26,10 @@ export function graphql(source: "\n\tquery getPages($first: Int) {\n\t\tpages(fi
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
 export function graphql(source: "\n\tquery getPageBySlug($slug: String!) {\n\t\tpage(where: { slug: $slug }) {\n\t\t\tid\n\t\t\tslug\n\t\t\theading\n\t\t\tbody {\n\t\t\t\thtml\n\t\t\t}\n\t\t}\n\t}\n"): (typeof documents)["\n\tquery getPageBySlug($slug: String!) {\n\t\tpage(where: { slug: $slug }) {\n\t\t\tid\n\t\t\tslug\n\t\t\theading\n\t\t\tbody {\n\t\t\t\thtml\n\t\t\t}\n\t\t}\n\t}\n"];
+/**
+ * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
+ */
+export function graphql(source: "\n\tquery getPlaces {\n\t\tplaces {\n\t\t\tid\n\t\t\tslug\n\t\t\tname\n\t\t\tlocation {\n\t\t\t\tlatitude\n\t\t\t\tlongitude\n\t\t\t}\n\t\t\tdescription {\n\t\t\t\thtml\n\t\t\t}\n\t\t\tgallery {\n\t\t\t\turl\n\t\t\t\theight\n\t\t\t\twidth\n\t\t\t}\n\t\t}\n\t}\n"): (typeof documents)["\n\tquery getPlaces {\n\t\tplaces {\n\t\t\tid\n\t\t\tslug\n\t\t\tname\n\t\t\tlocation {\n\t\t\t\tlatitude\n\t\t\t\tlongitude\n\t\t\t}\n\t\t\tdescription {\n\t\t\t\thtml\n\t\t\t}\n\t\t\tgallery {\n\t\t\t\turl\n\t\t\t\theight\n\t\t\t\twidth\n\t\t\t}\n\t\t}\n\t}\n"];
 
 /**
  * The graphql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
