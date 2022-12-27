@@ -1,18 +1,15 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import NextProgress from 'nextjs-progressbar'
+import { DefaultSeo } from 'next-seo'
 
 import GlobalStyles from 'styles/global'
+import SEO from '../../next-seo.config'
 
 function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<title>My Trips</title>
-				<meta
-					name="description"
-					content="Minhas viagens pelo Brasil e pelo Mundo!"
-				/>
 				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1"
@@ -21,6 +18,7 @@ function App({ Component, pageProps }: AppProps) {
 				<link rel="manifest" href="/manifest.json" />
 			</Head>
 
+			<DefaultSeo {...SEO} />
 			<NextProgress
 				color="#29D"
 				startPosition={0.3}
