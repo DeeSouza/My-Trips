@@ -13,7 +13,7 @@
 		"postinstall": "husky install"
 	},
 	"lint-staged": {
-		"src/**/*": [
+		"src/**/*.{ts, tsx}": [
 			"yarn lint --fix"
 		]
 	},
