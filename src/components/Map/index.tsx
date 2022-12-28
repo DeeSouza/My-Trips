@@ -35,6 +35,8 @@ const CustomTileLayer = () => {
 	)
 }
 
+const a = 1
+
 const Map = ({ places }: MapProps) => {
 	const router = useRouter()
 
