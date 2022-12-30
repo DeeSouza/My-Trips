@@ -47,6 +47,11 @@ export default class MyDocument extends Document {
 						integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
 						crossOrigin=""
 					/>
+					<link
+						rel="shortcut icon"
+						href="/icon64x64.png"
+						type="image/x-icon"
+					/>
 				</Head>
 				<body>
 					<Main />

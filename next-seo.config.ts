@@ -3,7 +3,7 @@ const seoConfig = {
 		type: 'website',
 		locale: 'en_IE',
 		url: 'https://my-trips-deesouza.vercel.app',
-		siteName: 'My Trips'
+		siteName: 'Minhas Viagens!'
 	},
 	linkedin: {
 		handle: '@deesouza',

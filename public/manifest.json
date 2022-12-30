@@ -1,10 +1,26 @@
 {
-	"name": "My Trips",
-	"short_name": "My Trips",
-	"icons": [],
-	"background_color": "#06092B",
+	"name": "Minhas Viagens",
+	"short_name": "Minhas Viagens",
+	"icons": [
+		{
+			"src": "/images/icon64x64.png",
+			"type": "image/png",
+			"sizes": "64x64"
+		},
+		{
+			"src": "/images/icon128x128.png",
+			"type": "image/png",
+			"sizes": "128x128"
+		},
+		{
+			"src": "/images/icon512x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"background_color": "#030518",
 	"description": "Minhas viagens pelo Brasil e pelo Mundo!",
 	"display": "fullscreen",
 	"start_url": "/",
-	"theme_color": "#06092B"
+	"theme_color": "#030518"
 }

@@ -11,19 +11,19 @@ export default function HomeTemplate({ places }: MapProps) {
 	return (
 		<>
 			<NextSeo
-				title="My Trips"
+				title="Minhas Viagens"
 				description="Minhas viagens pelo Brasil e pelo Mundo!"
 				canonical="https://my-trips-deesouza.vercel.app"
 				openGraph={{
-					url: '',
-					title: 'My Trips',
+					url: 'https://my-trips-deesouza.vercel.app/',
+					title: 'Minhas Viagens',
 					description: 'Minhas viagens pelo Brasil e pelo Mundo!',
 					images: [
 						{
-							url: '',
+							url: '/icon512x512.png',
 							width: 1280,
 							height: 720,
-							alt: 'My Trip'
+							alt: 'Minhas Viagens - Ícone'
 						}
 					]
 				}}

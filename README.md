@@ -9,7 +9,7 @@
 
 <br />
 <div align="center">
-  <h1 align="center">My Trips</h1>
+  <h1 align="center">Minhas Viagens</h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
